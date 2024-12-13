@@ -1,0 +1,13 @@
+aws:
+  ## @param aws.zoneType When using the AWS provider, filter for zones of this type (optional, options: public, private)
+  ##
+  zoneType: ""
+  ## @param aws.assumeRoleArn When using the AWS provider, assume role by specifying --aws-assume-role to the external-dns daemon
+  ##
+  # assumeRoleArn: ""
+  ## @param aws.roleArn Specify role ARN to the external-dns daemon
+  ##
+  # roleArn: "${var.aws_iam_role}"
+## @param policy Modify how DNS records are synchronized between sources and providers (options: sync, upsert-only )
+##
+policy: upsert-only

@@ -1,0 +1,5 @@
+output "outputs" {
+  value = {
+
+  }
+}

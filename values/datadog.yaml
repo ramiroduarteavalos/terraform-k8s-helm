@@ -1,0 +1,13 @@
+# Configure the node-based Agent
+targetSystem: "linux"
+datadog:
+  site: datadoghq.eu
+  #containerExclude: "kube_namespace:datadog kube_namespace:monitoring"
+  #containerExcludeLogs: "kube_namespace:.*"
+  #containerIncludeLogs: "kube_namespace:dpad"
+  logs:
+    enabled: false
+    containerCollectAll: true
+  
+clusterAgent:
+  enabled: true
